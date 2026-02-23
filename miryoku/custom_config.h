@@ -1,26 +1,6 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
-/ {
-  behaviors {
-    u_mt: u_mt {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
-      tapping-term-ms = <U_TAPPING_TERM>;
-      quick-tap-ms = <100>;
-      flavor = "tap-preferred";
-      bindings = <&kp>, <&kp>;
-    };
-    u_lt: u_lt {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
-      tapping-term-ms = <U_TAPPING_TERM>;
-      quick-tap-ms = <100;
-      flavor = "tap-preferred";
-      bindings = <&mo>, <&kp>;
-    };
-  };
-};
 
 #define MIRYOKU_LAYER_BASE \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
